@@ -4,23 +4,36 @@
 
 ## 📌 Projeto 2 - Web Full-Stack
 
-O projeto consta com um sistema de gestão para clínicas de psicologia organizarem e gerenciarem seus pacientes, utilizando Python e Django.
+O projeto consta com um sistema de gestão para clínicas de psicologia organizarem e gerenciarem seus pacientes, utilizando Python e Django.💻
 
-funcionalidades
+---
 
-- cadastro de paciente
+## ⚙ funcionalidades
+
+
+- Cadastro de Pacientes 📝
+  
+> Permite o registro de novos pacientes no sistema.
 > ![image](https://github.com/user-attachments/assets/a599b6d9-6e5f-456c-b3a9-c1c1055f3d9e)
 
-- interface personalizade para cada passiente com opçaõ de "Ativo" ou "Inativo" para pacientes não pagantes
+- Interface Personalizada para Pacientes 💼
+
+> Cada paciente possui uma interface personalizada, com a opção de marcar como "Ativo" ou "Inativo" (para pacientes não pagantes).
 > ![image](https://github.com/user-attachments/assets/d9295ca0-6286-408d-b802-32ac94efe8a7)
 
--registro de consultas com video e metrometro de emoçoes para avaliar a qualidade das consutlas e melhora do paciente 
+- Registro de Consultas com Vídeo e Medidor de Emoções 🎥
+  
+> As consultas são registradas com vídeos e um medidor de emoções, que ajuda a avaliar a qualidade das consultas e o progresso do paciente.
 >![image](https://github.com/user-attachments/assets/d26307a6-88f2-4228-b123-5ddc2c3590c0)
 
-- grafico personalizado com as consultas e emoçoes dos pacientes
+- Gráfico Personalizado 📊
+  
+> Gráfico interativo com os registros de consultas e as emoções dos pacientes ao longo do tempo.
 > ![image](https://github.com/user-attachments/assets/ba833eb9-26f8-4a0b-9c98-85a9fec3a08f)
 
-- interface para assitir o video da consulta (disponivel apenas para pacientes "Ativos"
+- Interface para Assistir ao Vídeo da Consulta 🎬
+  
+> Disponível apenas para pacientes "Ativos", essa funcionalidade permite assistir ao vídeo das consultas anteriores.
 > ![image](https://github.com/user-attachments/assets/208f7972-055c-421b-a04f-c65089d8377c)
 
  🔹Para iniciar o projeto, execute os seguintes comandos:
