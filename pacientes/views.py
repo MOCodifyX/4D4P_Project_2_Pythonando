@@ -73,3 +73,10 @@ def excluir_consulta(request, id):
     consulta = Consultas.objects.get(id=id)
     consulta.delete()
     return redirect(f'/pacientes/{consulta.paciente.id}')
+
+def consulta_publica(request, id):
+    consulta = Consultas.objects.get(id=id)
+    if not consulta.paciente.pagamento_em_dia:
+        raise Http404()
+
+    return render(request, 'consulta_publica.html', {'consulta': consulta})
