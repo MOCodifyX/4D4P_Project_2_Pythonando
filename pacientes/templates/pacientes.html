@@ -76,18 +76,20 @@
                 <button type="submit" class="inline-flex justify-center rounded-md bg-indigo-600 mt-4 cursor-pointer px-3 py-2 w-full text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Cadastrar paciente</button>
             </form>
         </div>
+
             <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
 
+            {% for paciente in pacientes %}
                 <li>
                 <div class="flex items-center gap-x-6">
-                    <img class="size-16 rounded-full" src="" alt="">
+                    <img class="size-16 rounded-full" src="{{paciente.foto.url}}" alt="">
                     <div>
-                    <a href="#" class="text-base/7 font-semibold tracking-tight text-gray-900">Caio Sampaio</a>
-                    <p class="text-sm/6 font-semibold text-indigo-600">TDAH</p>
+                    <a href="#" class="text-base/7 font-semibold tracking-tight text-gray-900">{{paciente.nome}}</a>
+                    <p class="text-sm/6 font-semibold text-indigo-600">{{paciente.queixa}}</p>
                     </div>
                 </div>
                 </li>
-        
+            {% endfor %}
             
 
             </ul>

@@ -6,7 +6,8 @@ from django.contrib.messages import constants
 
 def pacientes(request):
     if request.method == "GET":
-        return render(request, 'pacientes.html', {'queixas': Pacientes.queixa_choices})
+        pacientes = Pacientes.objects.all()
+        return render(request, 'pacientes.html', {'queixas': Pacientes.queixa_choices, 'pacientes': pacientes})
     elif request.method == "POST":
         nome = request.POST.get('nome')
         email = request.POST.get('email')
@@ -27,5 +28,5 @@ def pacientes(request):
         )
 
         paciente.save()
-        essages.add_message(request, constants.SUCCESS, 'Cadastro realizado com sucesso!')
+        messages.add_message(request, constants.SUCCESS, 'Cadastro realizado com sucesso!')
         return redirect('pacientes')
