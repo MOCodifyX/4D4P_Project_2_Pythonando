@@ -8,8 +8,15 @@ O projeto consta com um sistema de gestão para clínicas de psicologia organiza
 
 ---
 
-## ⚙ funcionalidades
+ 🔹Para iniciar o projeto, execute os seguintes comandos:
 
+	python manage.py runserver
+
+	acesso o link : http://127.0.0.1:8000/pacientes/
+
+ ---
+ 
+## ⚙ funcionalidades
 
 - Cadastro de Pacientes 📝
   
@@ -35,12 +42,6 @@ O projeto consta com um sistema de gestão para clínicas de psicologia organiza
   
 > Disponível apenas para pacientes "Ativos", essa funcionalidade permite assistir ao vídeo das consultas anteriores.
 > ![image](https://github.com/user-attachments/assets/208f7972-055c-421b-a04f-c65089d8377c)
-
- 🔹Para iniciar o projeto, execute os seguintes comandos:
-
-	python manage.py runserver
-
-	acesso o link : http://127.0.0.1:8000/pacientes/
 
 # 🔧 Material de Apoio disponibilizado pelo Instrutor
 
